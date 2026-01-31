@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8"/>
+<meta name="description" content="SHA-256, l'algorithme de hachage utilisé par le bitcoin"/>
+<meta name="author" content="sajid heron" />
+<meta name="subject" content="le hachage SHA-256"/>
+<meta name="keywords" content="SHA-256,hash,bitcoin">
+<title>Le BTC - Algorithme</title>
+<link rel="icon" type="image/x-icon" href="images/favicon.ico">
+</head>
+<body>
+	<header> 
+		<nav class="menu">
+  			<ul>
+    			<li><a href="index.html">Accueil</a></li>
+                <li><a href="hashrate.html">Le Hashrate : la puissance de calcul du réseau</a></li>
+                <li><a href="halving.html">Le Halving : pourquoi seulement 21 millions de BTC</a></li>
+                <li><a href="algorithme.html">SHA-256 :l'algorithme qui sécurise le Bitcoin</a></li>
+  			</ul>
+		</nav>
+		<figure> <img src="images/btc.png" alt="le logo de l'université"></figure>
+		<h1>Le BTC, entre puissance de calcul, spéculation et algorithme</h1>
+	<hr/>
+	</header>
+		
+	<main>
+        <h1>SHA-256 :l'algorithme qui sécurise le Bitcoin</h1>
+        <figure><img src="images/hachage.png" alt="Schéma d'une fonction de hachage"></figure>
+        <figcaption><em>Principe d'une fonction de hachage</em></figcaption>
+
+        <section>
+            <h2>Qu'est qu'une fonction de hachage ?</h2>
+            <p>Une <strong>fonction de hachage</strong> transforme une donnée de taille quelconque en une empreinte de <strong> taille fixe</strong>, ici pour le SHA-256, la sortie est toujours de 256 bits soit 64 caractères hexadécimaux.</p>
+            <p> <strong>Point crucial : </strong>c'est une fonction <strong>à sens unique</strong>. Calculer le hash d'une donnée est rapide, mais retrouver la donnée à partir du hash est considéré comme impossible (<em>pour l'instant...</em>).</p>
+        </section>
+
+        <section>
+            <h2>Propriétés cryptographiques</h2>
+            <p>Pour être utilisable, une fonction de hachage doit respecter plusieurs propriétés : </p>
+            <dl>
+                <dt><strong>Déterminisme</strong></dt>
+                <dd>Une même entrée produit toujours le même résultat</dd>
+                <dt><strong>Efficacité</strong></dt>
+                <dd>Le calcul d'un hash doit être rapide, pour pouvoir en calculer des milliards par seconde.</dd>
+                <dt><strong>Effet avalanche</strong></dt>
+                <dd>Un changement minime sur une entrée modifie grandement sa sortie, afin de ne pas pouvoir faire de lien avec l'original.</dd>
+                <dt><strong>Doublons</strong></dt>
+                <dd>Il n'y a pas 2 entrées produisants le même hash.</dd>
+            </dl>
+            
+
+        </section>
+        <section>
+            <h2>Application au minage du Bitcoin</h2>
+            <figure><img src="images/minage.png" alt="Schéma du processus de minage"></figure>
+            <figcaption><em>Recherche d'un nonce produisant un hash valide</em></figcaption>
+            <p>Le minage consiste à trouver une valeur (appelée <strong>nonce</strong>) 
+            telle que le hash du bloc commence par un certain nombre de 
+            <strong>zéros</strong>. C'est la "preuve de travail" (<em>Proof of Work</em>).</p>
+            
+            <p>Comme il est impossible de "fabriquer" un hash spécifique, 
+            la seule méthode est l'<strong>essai</strong> jusqu'à trouver.</p>
+
+            <p>Ce processus est purement probabiliste. Chaque essai a la même 
+            chance de succès, indépendamment des essais précédents.</p>
+
+            <p>En 2025, la difficulté réelle exige environ <strong>19 zéros</strong> 
+            en début de hash, nécessitant en moyenne 10<sup>21</sup> tentatives 
+            pour trouver un bloc valide.</p>
+        </section>
+        <section>
+            <h2>Pourquoi le SHA-256 est considéré sûr</h2>
+            
+            <table border="3">
+                <caption>Coût des attaques contre SHA-256</caption>
+                <thead>
+                    <tr>
+                        <th>Attaque</th>
+                        <th>Complexité</th>
+                        <th>Faisabilité</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Inverser un hash</td>
+                        <td>2<sup>256</sup> opérations</td>
+                        <td>Impossible (plus que les atomes dans l'univers)</td>
+                    </tr>
+                    <tr>
+                        <td>Trouver une collision</td>
+                        <td>2<sup>128</sup> opérations</td>
+                        <td>Impossible en pratique</td>
+                    </tr>
+                    <tr>
+                        <td>Miner un bloc</td>
+                        <td>~10<sup>21</sup> opérations</td>
+                        <td>~10 min avec le réseau mondial</td>
+                    </tr>
+                </tbody>
+            </table>
+            
+            <p>Pour donner un ordre de grandeur : 2<sup>256</sup> ≈ 10<sup>77</sup>. 
+            Le nombre d'atomes dans l'univers observable est estimé à environ 
+            10<sup>80</sup>.</p>
+        </section>
+		
+
+	</main>
+	
+	<footer> <hr/> <p> Janvier 2026, HERON Sajid, L2 Informatique TD C, UE Développement Web</p>
+            <figure> <img src="images/logo.svg" alt="le logo de l'université"></figure> 
+    </footer>
+</body>
+</html>

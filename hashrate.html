@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8"/>
+<meta name="description" content="Présentation du concepte du hashrate d'un réseau"/>
+<meta name="author" content="sajid heron" />
+<meta name="subject" content="Le Hashrate"/>
+<meta name="keywords" content="Bitcoin,hashrate,puissance de calcul,CPU,GPU,ASIC">
+<title>Le BTC - Hashrate</title>
+<link rel="icon" type="image/x-icon" href="images/favicon.ico">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<header> 
+		<nav class="menu">
+  			<ul>
+    			<li><a href="index.html">Accueil</a></li>
+    			<li><a href="hashrate.html">Le Hashrate : la puissance de calcul du réseau</a></li>
+    			<li><a href="halving.html">Le Halving : pourquoi seulement 21 millions de BTC</a></li>
+    			<li><a href="algorithme.html">SHA-256 :l'algorithme qui sécurise le Bitcoin</a></li>
+  			</ul>
+		</nav>
+		<figure> <img src="images/btc.png" alt="le logo de l'université"></figure>
+		<h1>Le BTC, entre puissance de calcul, spéculation et algorithme</h1>
+	<hr/>
+	</header>
+		
+	<main>
+		<h1>Le Hashrate : la puissance de calcul du réseau</h1>
+
+		<figure> <img src="images/hashrate.jpg" alt="Graphique de l'évolution du hashrate entre 2009 et 2024"></figure>
+		<figcaption><em>Evolution du hashrate entre 2009 et 2024.</em></figcaption>
+
+		<section>
+			<h2>Définition</h2>
+			<p> Le <strong>hashrate</strong> représente le nombre de calculs de hash effectués par seconde sur l'ensemble du réseau Bitcoin. Un <em>hash</em> est le résultat d'une fonction de hachage (détaillée sur la page <a href="algorithme.html">algorithme</a>)</p>
+			<p>Pour miner un bloc, les mineurs doivent tester des <strong>milliards de combinaisons</strong> jusqu'à trouver celle qui produit un hash valide. Le hashrate mesure alors la vitesse à laquelle le réseau effectue ces calculs.</p>
+		</section>
+
+		<section>
+			<h2>Ordres de grandeur</h2>
+			<p>Afin de mieux appréhender ces unités, voici les différentes unités et leur contexte "historique" respectifs. </p>
+			<table border="3">
+				<thead>
+                    <tr>
+                        <th>Unité</th>
+                        <th>Valeur</th>
+                        <th>Contexte</th>
+                    </tr>
+                </thead>
+                <tbody>
+                	<tr>
+                		<td>KH/s (Kilohash)</td>
+                		<td>10<sup>3</sup> hash/s</td>
+                		<td>CPU en 2009</td>
+                	</tr>
+                	<tr>
+                		<td>MH/s (Megahash)</td>
+                		<td>10<sup>6</sup> hash/s</td>
+                		<td>GPU</td>
+                	</tr>
+                	<tr>
+                		<td>GH/s (Gigahash)</td>
+                		<td>10<sup>9</sup> hash/s</td>
+                		<td>Premiers ASIC (2013)</td>
+                	</tr>
+                	<tr>
+                		<td>TH/s (Terahash)</td>
+                		<td>10<sup>12</sup> hash/s</td>
+                		<td>ASIC actuels</td>
+                	</tr>
+                	<tr>
+                		<td>EH/s (Terahash)</td>
+                		<td>10<sup>18</sup> hash/s</td>
+                		<td>Réseau mondial actuel</td>
+                	</tr>
+                </tbody>
+			</table>
+		</section>
+
+		<section>
+			<h2>Evolution du matériel de minage</h2>
+			<figure> <img src="images/asic.png" alt="Un ASIC de minage de bitcoin, de la marque ASIC MINER"></figure>
+			<figcaption><em>Un ASIC moderne de la marque ASIC MINER, ces appareils coûtent généralement entre 2000 et plus de 17 00 euros.</em></figcaption>
+
+			<p>Le matériel utilisé pour miner a considérablement évolué en 15 ans.</p>
+			<ol>
+				<li>
+					<strong>2009-2010 : CPU</strong>
+					Au lancement, le minage s'effectuait sur des processeurs classiques "civils". N'importe quel ordinateur pouvait participer au réseau.
+				</li>
+				<li>
+					<strong>2010-2012 : GPU</strong>
+					Les cartes graphiques se sont révélées bien plus efficaces pour les calculs désirées grâce à leur architecture. (Réaliser énormément de calculs en parallèles)
+				</li>
+				<li>
+					<strong>2012-2013 : FPGA</strong>
+					Les circuits programmables ont offert un meilleur ratio performance/consommation, tout en restant reconfigurable.
+				</li>
+				<li>
+					<strong>2013-aujourd'hui : ASIC</strong>
+					Les ASIC (<em>Application-Specific Integrated Circuit</em>) sont des puces conçues <strong>exclusivement</strong> pour une action spécifique (ici, calculer des hash SHA-256). Elles ne peuvent rien faire d'autre, mais sont exceptionnelles dans leur domaine et atteignent des résultats impossibles autrement.
+				</li>
+
+			</ol>
+		</section>
+
+		<section>
+			<h2>Rôle du hashrate dans la sécurité</h2>
+
+			<dl>
+				<dt><strong>Protection contre les attaques</strong></dt>
+				<dd> Plus le hashrate est élevé, plus une attaque devient couteuse/compliquée. Pour réussir une attaque, il faudrait disposer de plus de la moitié de la puissance mondiale. Avec 972 EH/s (statistique au 23 janvier 2026), cela représenterait un investissement de plusieurs millairds de dollars en matériel et électricité.</dd>
+			</dl>
+			<dl>
+				<dt><strong>Ajustement automatique de la difficulté</strong></dt>
+				<dd> Le protocole vise un temps de <strong>10 minutes</strong> pour le minage de chaque bloc. Pour maintenir ce rythme malgré les variations de hashrates, la difficulté est recalculée tous les 2016 blocs (environ 2 semaines). Alors si le hashrate augmente, la difficulté augmente proportionnellement.</dd>
+			</dl>
+			<dl>
+				<dt><strong>Indicateur de confiance</strong></dt>
+				<dd> Un hashrate croissant signifie que le "marché" a confiance dans le projet Bitcoin.</dd>
+			</dl>
+		</section>
+
+	</main>
+	
+	<footer> <hr/> <p> Janvier 2026, HERON Sajid, L2 Informatique TD C, UE Développement Web</p>
+			<figure> <img src="images/logo.svg" alt="le logo de l'université"></figure> 
+	</footer>
+</body>
+</html>
