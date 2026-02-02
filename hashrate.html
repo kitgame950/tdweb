@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="FR">
 <head>
 <meta charset="utf-8"/>
 <meta name="description" content="Présentation du concepte du hashrate d'un réseau"/>
-<meta name="author" content="sajid heron" />
+<meta name="author" content="sajid heron, nassim boussalem" />
 <meta name="subject" content="Le Hashrate"/>
 <meta name="keywords" content="Bitcoin,hashrate,puissance de calcul,CPU,GPU,ASIC">
 <title>Le BTC - Hashrate</title>
@@ -22,16 +22,18 @@
 		</nav>
 		<figure> <img src="images/btc.png" alt="le logo de l'université"></figure>
 		<h1>Le BTC, entre puissance de calcul, spéculation et algorithme</h1>
-	<hr/>
 	</header>
 		
 	<main>
 		<h1>Le Hashrate : la puissance de calcul du réseau</h1>
 
-		<figure> <img src="images/hashrate.jpg" alt="Graphique de l'évolution du hashrate entre 2009 et 2024"></figure>
-		<figcaption><em>Evolution du hashrate entre 2009 et 2024.</em></figcaption>
+		<figure> 
+			<img src="images/hashrate.jpg" alt="Graphique de l'évolution du hashrate entre 2009 et 2024">
+			<figcaption><em>Evolution du hashrate entre 2009 et 2024.</em></figcaption>
+		</figure>
+		
 
-		<section>
+		<section id="definition" class="cadre">
 			<h2>Définition</h2>
 			<p> Le <strong>hashrate</strong> représente le nombre de calculs de hash effectués par seconde sur l'ensemble du réseau Bitcoin. Un <em>hash</em> est le résultat d'une fonction de hachage (détaillée sur la page <a href="algorithme.html">algorithme</a>)</p>
 			<p>Pour miner un bloc, les mineurs doivent tester des <strong>milliards de combinaisons</strong> jusqu'à trouver celle qui produit un hash valide. Le hashrate mesure alors la vitesse à laquelle le réseau effectue ces calculs.</p>
@@ -80,10 +82,13 @@
 
 		<section>
 			<h2>Evolution du matériel de minage</h2>
-			<figure> <img src="images/asic.png" alt="Un ASIC de minage de bitcoin, de la marque ASIC MINER"></figure>
-			<figcaption><em>Un ASIC moderne de la marque ASIC MINER, ces appareils coûtent généralement entre 2000 et plus de 17 00 euros.</em></figcaption>
+			<figure> 
+				<img src="images/asic.png" alt="Un ASIC de minage de bitcoin, de la marque ASIC MINER">
+				<figcaption><em>Un ASIC moderne de la marque ASIC MINER, ces appareils coûtent généralement entre 2000 et plus de 17 00 euros.</em></figcaption>
+			</figure>
+			
 
-			<p>Le matériel utilisé pour miner a considérablement évolué en 15 ans.</p>
+			<p>Le matériel utilisé pour miner a considérablement évolué en 15 ans :</p>
 			<ol>
 				<li>
 					<strong>2009-2010 : CPU</strong>
@@ -110,7 +115,7 @@
 
 			<dl>
 				<dt><strong>Protection contre les attaques</strong></dt>
-				<dd> Plus le hashrate est élevé, plus une attaque devient couteuse/compliquée. Pour réussir une attaque, il faudrait disposer de plus de la moitié de la puissance mondiale. Avec 972 EH/s (statistique au 23 janvier 2026), cela représenterait un investissement de plusieurs millairds de dollars en matériel et électricité.</dd>
+				<dd> Plus le hashrate est élevé, plus une attaque devient couteuse/compliquée. Pour réussir une attaque, il faudrait disposer de plus de la moitié de la puissance mondiale. Avec 972 EH/s (statistique au <time class="badge-date" datetime="2026-01-23">23 janvier 2026</time>), cela représenterait un investissement de plusieurs millairds de dollars en matériel et électricité.</dd>
 			</dl>
 			<dl>
 				<dt><strong>Ajustement automatique de la difficulté</strong></dt>
@@ -124,8 +129,10 @@
 
 	</main>
 	
-	<footer> <hr/> <p> Janvier 2026, HERON Sajid, L2 Informatique TD C, UE Développement Web</p>
-			<figure> <img src="images/logo.svg" alt="le logo de l'université"></figure> 
+	<footer> 
+		<figure> <img src="images/logo.svg" alt="le logo de l'université CY Cergy Paris"></figure>
+		<time datetime="2026-01">Janvier 2026</time>
+		<span>HERON Sajid et BOUSSALEM Nassim, L2 Informatique TD C, UE Développement Web</span> 
 	</footer>
 </body>
 </html>

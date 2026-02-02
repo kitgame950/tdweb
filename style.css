@@ -1,0 +1,239 @@
+body {
+    font-family: "Arial",sans-serif;
+    background-color: #EDEDED;
+    line-height: 1.6;
+}
+
+header, main, footer {
+    max-width: 1500px;
+    width: 70%;
+    margin: 0 auto; 
+    padding: 20px;
+    background-color: #FFFFFF; 
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+    border-radius: 5px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+    border-bottom: 5px solid #F7931A; 
+}
+
+header h1 {
+    color: #F7931A; 
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+nav.menu {
+    background-color: #333333; 
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+nav.menu ul {
+    list-style-type: none; 
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav.menu li {
+    margin: 0;
+}   
+
+nav.menu a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 15px 20px;
+    font-weight: bold;
+    transition: background-color 0.3s; 
+}
+
+nav.menu a:hover {
+    background-color: #F7931A; 
+}
+
+main h1 {
+    font-size: 2em;
+    color: #333333;
+    border-left: 5px solid #F7931A;
+    padding-left: 15px;
+}
+
+h2 {
+    color: #F7931A;
+    border-bottom: 1px solid #DDDDDD;
+    padding-bottom: 10px;
+    margin-top: 20px;
+}
+
+p {
+    margin-bottom: 5px;
+    text-align: justify; 
+}
+
+main figure {
+    margin: 20px auto; 
+    text-align: center;
+    background-color: #F9F9F9;
+    padding: 10px;
+    border: 1px solid #DDDDDD;
+    border-radius: 4px;
+    width: 70%;
+}
+
+img {
+    max-width: 100%; 
+    height: auto;
+}
+
+figcaption {
+    font-style: italic;
+    font-size: 0.9em;
+    margin: 20px
+}
+
+table {
+    width: 70%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    border: 0px;
+}
+
+th, td {
+    border: 0px;
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #F7931A;
+    color: white;
+    font-size: 1.1em;
+}
+
+tr:nth-child(even) {
+    background-color: #F2F2F2;
+}
+
+dt {
+    font-weight: bold;
+    color: #333;
+    margin-top: 15px;
+    font-size: 1.1em;
+}
+
+dd {
+    margin-left: 20px;
+    color: #5E5E5E;
+}
+
+li{
+    margin-left: 20px;
+    color: #5E5E5E;
+}
+
+blockquote {
+    border-left: 4px solid #F7931A;
+    margin: 10px;
+    padding-left: 20px;
+    font-style: italic;
+    background-color: #fff8e1; 
+}
+
+footer {
+    text-align: center;
+    font-size: 0.9em;
+    color: #5E5E5E;
+    margin-top: 20px;
+    border-top: 3px solid #F7931A;
+}
+
+strong {
+    color:#000000;
+}
+
+footer time {
+    font-weight: bold;
+    color: #F7931A;
+}
+
+#logo-univ {
+    width: 250px;
+    margin-top: 10px;
+}
+
+time.badge-date {
+    background-color: #e8ecef;
+    color: #2c3e50; 
+    padding: 2px 8px; 
+    font-size: 0.9em; 
+    border: 1px solid #bdc3c7; 
+    font-family: 'Courier New',Courier,monospace;
+    transition: 0.3s;
+    cursor: default;
+}
+
+time.badge-date:hover {
+    background-color: #F7931A;
+    color: #fff;
+    border-color: #fff;
+}
+
+span.satoshi{
+    text-shadow:
+    1px 1px 2px black,
+    0 0 1em #F7931A,
+    0 0 0.2em #F7931A;
+    color: white;
+    font-weight: bold;
+}
+
+.cadre {
+    border: 3px solid; 
+    border-radius: 5px; 
+    padding: 20px; 
+    margin-top: 30px; 
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.cadre h2 {
+    position: absolute; 
+    top: -15px; 
+    left: 20px; 
+    background-color: #fff;
+    padding: 0 10px; 
+    margin: 0; 
+    font-size: 1.2em;
+}
+
+#citation {
+    border-color: #F7931A; 
+}
+
+#citation h2 {
+    color: #d67808; 
+    border: 3px solid #FBCA8E;
+    background-color: #FBCA8E;
+    border-radius: 5px;
+}
+
+#definition {
+    border-color: #34495e;
+}
+
+#definition h2 {
+    color: #2c3e50; 
+    border: 3px solid #B3C4D5;
+    background-color: #B3C4D5;
+    border-radius: 5px;
+}
+
+

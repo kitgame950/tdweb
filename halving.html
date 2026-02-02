@@ -1,13 +1,14 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="FR">
 <head>
 <meta charset="utf-8"/>
 <meta name="description" content="Le halving du bitcoin : comprendre la rareté"/>
-<meta name="author" content="sajid heron" />
+<meta name="author" content="sajid heron, nassim boussalem" />
 <meta name="subject" content="Le halving du bitcoin"/>
 <meta name="keywords" content="halving,Bitcoin,21 millions,ferme">
 <title>Le BTC - Halving</title>
 <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 	<header> 
@@ -21,21 +22,26 @@
 		</nav>
 		<figure> <img src="images/btc.png" alt="le logo de l'université"></figure>
 		<h1>Le BTC, entre puissance de calcul, spéculation et algorithme</h1>
-	<hr/>
 	</header>
 		
 	<main>
 		<h1>Le Halving : pourquoi seulement 21 millions de BTC</h1>
-		<figure> <img src="images/halving.png" alt="Graphique en barre montrant le halving du Bitcoin de 2009 à 2020"></figure>
-		<figcaption><em>Chronologie des halving du BTC entre 2009 et 2020, les récompenses diminuent de moitié tous les 4 ans.</em></figcaption>
+		<figure> 
+			<img src="images/halving.png" alt="Graphique en barre montrant le halving du Bitcoin de 2009 à 2020">
+			<figcaption><em>Chronologie des halving du BTC entre 2009 et 2020, les récompenses diminuent de moitié tous les 4 ans.</em></figcaption>
+		</figure>
+		
 
-		<section>
+		<section class="cadre" id="definition">
 			<h2>Principe du halving</h2>
 			<p>Le <strong>halving</strong> ("division par deux" en anglais) est un événement programmé dans le code du Bitcoin. Tous les <strong>210 000 blocs</strong> soit environ 4 ans, la récompenses accordée aux mineurs pour le minage d'un bloc est divisée par deux.</p>
 			<p> Ce mécanisme a une conséquence majeure : le nombre total de bitcoins en circulation ne pourra <strong>jamais</strong> dépasser 21 millions.</p>
 		</section>
 		<section>
 			<h2>Historique des halvings</h2>
+			<aside>
+				<p>Vers 2140, la récompense deviendra plus petite que 1 satoshi (qui est la plus petite unité possible), alors ce sera la fin de l'émission de nouveaux bitcoins.</p>
+			</aside>
 			<table border="3">
 				<thead>
 					<tr>
@@ -43,7 +49,7 @@
 					<th>Date</th>
 					<th>Bloc</th>
 					<th>Récompense</th>
-				</tr>
+					</tr>
 				</thead>
 				<tbody>
 					<tr>
@@ -84,13 +90,16 @@
 					</tr>
 				</tbody>
 			</table>
-			<p>Vers 2140, la récompense deviendra plus petite que 1 satoshi (qui est la plus petite unité possible), alors ce sera la fin de l'émission de nouveaux bitcoins.</p>
+			
 		</section>
 
 		<section>
 			<h2>Le calcul des 21 millions</h2>
-			<figure> <img src="images/emission.png" alt="Graphique montrant la courbe d'émission des bitcoins tendant vers 21 millions"></figure>
-			<figcaption> <em>Courbe d'émission, l'offre totale tend vers 21 millions.</em></figcaption>
+			<figure> 
+				<img src="images/emission.png" alt="Graphique montrant la courbe d'émission des bitcoins tendant vers 21 millions">
+				<figcaption> <em>Courbe d'émission, l'offre totale tend vers 21 millions.</em></figcaption>
+			</figure>
+			
 
 			<p>D'où vient ce nombre de 21 millions ? C'est une utilisation directe des <strong>suites géométriques</strong> :</p>
 			<p>A chaque période de 210 000 blocs, le nombre de BTC crées est :</p>
@@ -101,10 +110,14 @@
 				<li>Période 4 : 210 000 x 6,25  = 1 312 500 BTC</li>
 				<li>Etc ...</li>
 			</ul>
+			
+			
+			
 			<p>Le total correspond à la somme d'une suite géométrique de premier terme <em>a = 50</em> et de raison <em>r = 0,5</em></p>
 			<p>S = a/(1-r) = 50/0,5 = 100</p>
 
 			<p>D'où : Total = 210 000 x 100 = <strong>21 000 000 BTC</strong></p>
+			
 		</section>
 
 
@@ -112,8 +125,11 @@
 			
 
 			<h2>Conséquences du halving</h2>
-			<figure> <img src="images/offredemande.jpg" alt="Graphique de l'offre et de la demande du BTC"></figure>
-			<figcaption><em>Graphique de l'offre et de la demande du BTC</em></figcaption>
+			<figure> 
+				<img src="images/offredemande.jpg" alt="Graphique de l'offre et de la demande du BTC">
+				<figcaption><em>Graphique de l'offre et de la demande du BTC</em></figcaption>
+			</figure>
+			
 
 			<dl>
 				<dt><strong>"Politique monétaire" prévisible</strong></dt>
@@ -125,22 +141,28 @@
 		</section>
 		<section>
 			<h2>Qui est concerné par le halving ?</h2>
-			<figure> <img src="images/ferme.jpg" alt="Photo d'une ferme de minage bitcoin au kazakhstan"></figure>
-			<figcaption><em>Une ferme de minage, ces installations sont impactées par chaque halving</em></figcaption>
+			<figure> 
+				<img src="images/ferme.jpg" alt="Photo d'une ferme de minage bitcoin au kazakhstan">
+				<figcaption><em>Une ferme de minage, ces installations sont impactées par chaque halving</em></figcaption>
+			</figure>
 			
 			
+			<dl>
 				<dt><strong>Les mineurs</strong></dt>
 				<dd> Pour les mineurs, c'est un moment critique. Du jour au lendemain, les revenus sont divisés par deux, ceux dont les coûts sont trop elevés pour continuer finissent par arrêter leur activité.</dd>
 				<dt><strong>Les détenteurs</strong></dt>
 				<dd>Pour ceux possédant du bitcoin, le halving ne change rien à leur situation. Mais la réduction de l'offre va fortement influencer le cours sur le long terme, d'après les lois de l'offre et de la demande</dd>
 				<dt><strong>Les développeurs</strong></dt>
 				<dd>Le halving ne nécessite aucune intervention des développeurs. C'est un événement <strong>entièrement automatique</strong>.</dd>
-					</section>
+			</dl>
+		</section>
 	</main>
 		
 	
-	<footer> <hr/> <p> Janvier 2026, HERON Sajid, L2 Informatique TD C, UE Développement Web</p>
-			<figure> <img src="images/logo.svg" alt="le logo de l'université"></figure> 
+	<footer>
+		<figure> <img src="images/logo.svg" alt="le logo de l'université CY Cergy Paris"></figure>
+		<time datetime="2026-01">Janvier 2026</time>
+		<span>HERON Sajid et BOUSSALEM Nassim, L2 Informatique TD C, UE Développement Web</span>  
 	</footer>
 </body>
 </html>

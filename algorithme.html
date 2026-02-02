@@ -1,13 +1,14 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="FR">
 <head>
 <meta charset="utf-8"/>
 <meta name="description" content="SHA-256, l'algorithme de hachage utilisé par le bitcoin"/>
-<meta name="author" content="sajid heron" />
+<meta name="author" content="sajid heron, nassim boussalem" />
 <meta name="subject" content="le hachage SHA-256"/>
 <meta name="keywords" content="SHA-256,hash,bitcoin">
 <title>Le BTC - Algorithme</title>
 <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 	<header> 
@@ -21,15 +22,17 @@
 		</nav>
 		<figure> <img src="images/btc.png" alt="le logo de l'université"></figure>
 		<h1>Le BTC, entre puissance de calcul, spéculation et algorithme</h1>
-	<hr/>
 	</header>
 		
 	<main>
         <h1>SHA-256 :l'algorithme qui sécurise le Bitcoin</h1>
-        <figure><img src="images/hachage.png" alt="Schéma d'une fonction de hachage"></figure>
-        <figcaption><em>Principe d'une fonction de hachage</em></figcaption>
+        <figure>
+            <img src="images/hachage.png" alt="Schéma d'une fonction de hachage">
+            <figcaption><em>Principe d'une fonction de hachage</em></figcaption>
+        </figure>
+        
 
-        <section>
+        <section class="cadre" id="definition">
             <h2>Qu'est qu'une fonction de hachage ?</h2>
             <p>Une <strong>fonction de hachage</strong> transforme une donnée de taille quelconque en une empreinte de <strong> taille fixe</strong>, ici pour le SHA-256, la sortie est toujours de 256 bits soit 64 caractères hexadécimaux.</p>
             <p> <strong>Point crucial : </strong>c'est une fonction <strong>à sens unique</strong>. Calculer le hash d'une donnée est rapide, mais retrouver la donnée à partir du hash est considéré comme impossible (<em>pour l'instant...</em>).</p>
@@ -53,9 +56,14 @@
         </section>
         <section>
             <h2>Application au minage du Bitcoin</h2>
-            <figure><img src="images/minage.png" alt="Schéma du processus de minage"></figure>
-            <figcaption><em>Recherche d'un nonce produisant un hash valide</em></figcaption>
-            <p>Le minage consiste à trouver une valeur (appelée <strong>nonce</strong>) 
+            <figure>
+                <img src="images/minage.png" alt="Schéma du processus de minage">
+                <figcaption><em>Recherche d'un nonce produisant un hash valide</em></figcaption>
+            </figure>
+            
+            <section class="cadre" id="citation">
+                <h2>Explications</h2>
+                <p>Le minage consiste à trouver une valeur (appelée <strong>nonce</strong>) 
             telle que le hash du bloc commence par un certain nombre de 
             <strong>zéros</strong>. C'est la "preuve de travail" (<em>Proof of Work</em>).</p>
             
@@ -68,6 +76,7 @@
             <p>En 2025, la difficulté réelle exige environ <strong>19 zéros</strong> 
             en début de hash, nécessitant en moyenne 10<sup>21</sup> tentatives 
             pour trouver un bloc valide.</p>
+            </section>
         </section>
         <section>
             <h2>Pourquoi le SHA-256 est considéré sûr</h2>
@@ -108,8 +117,10 @@
 
 	</main>
 	
-	<footer> <hr/> <p> Janvier 2026, HERON Sajid, L2 Informatique TD C, UE Développement Web</p>
-            <figure> <img src="images/logo.svg" alt="le logo de l'université"></figure> 
+	<footer>
+        <figure> <img src="images/logo.svg" alt="le logo de l'université CY Cergy Paris"></figure>
+        <time datetime="2026-01">Janvier 2026</time>
+        <span>HERON Sajid et BOUSSALEM Nassim, L2 Informatique TD C, UE Développement Web</span>  
     </footer>
 </body>
 </html>
